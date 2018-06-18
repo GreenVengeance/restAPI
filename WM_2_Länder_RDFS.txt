@@ -1,0 +1,299 @@
+@prefix wm: <http://WM-Fußball.de/semweb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+____________________________________________________________________________________
+wm:gruppe a rdfs:Class .
+wm:team a rdfs:Class .
+wm:spieler a rdfs:Class ;
+	rdfs:subClassOf wm:team.
+wm:trainer a rdfs:Class ;
+	rdfs:subClassOf wm:team.
+____________________________________________________________________________________
+wm:spitzname a rdfs:Property ;
+	rdfs:domain wm:team;
+	rdfs:range xsd:string .
+wm:platzierungen_2014 a rdfs:Property ;
+	rdfs:domain wm:team;
+	rdfs:range xsd:double .
+wm:nummer a rdfs:Property ;
+	rdfs:domain wm:spieler;
+	rdfs:range xsd:double .
+wm:position a rdfs:Property ;
+	rdfs:domain wm:spieler;
+	rdfs:range xsd:string .
+wm:alter a rdfs:Property ;
+	rdfs:domain wm:spieler;
+	rdfs:range xsd:double .
+wm:alter a rdfs:Property ;
+	rdfs:domain wm:trainer;
+	rdfs:range xsd:double .
+
+____________________________________________________________________________________
+wm:A a wm:gruppe ; 
+	wm:team wm:Russland, wm:Saudi_Arabien, wm:Ägypten, wm:Uruguay .
+wm:B a wm:gruppe ; 
+	wm:team wm:Portugal, wm:Spanien, wm:Marokko, wm:Iran .
+wm:C a wm:gruppe ; 
+	wm:team wm:Frankreich, wm:Australien, wm:Peru, wm:Dänemark .
+wm:D a wm:gruppe ;  
+	wm:team  wm:Argentinien, wm:Island, wm:Kroatien, wm:Nigeria .
+wm:E a wm:gruppe ; 
+	wm:team wm:Brasilien, wm:Schweiz, wm:Costa_Rica, wm:Serbien .
+wm:F a wm:gruppe ; 
+	wm:team wm:Deutschland, wm:Mexiko, wm:Schweden, wm:Südkorea .
+wm:G a wm:gruppe ; 
+	wm:team wm:Belgien, wm:Panama, wm:Tunesien, wm:England .
+wm:H a wm:gruppe ; 
+	wm:team wm:Polen, wm:Senegal, wm:Kolumbien, wm:Japan. 
+
+	
+wm:Costa_Rica	a wm:team ; 
+	wm:spitzname Ticos;
+	wm:platzierungen_2014 7 ;
+	wm:spieler Keylor_NAVAS, Patrick_PEMBERTON, Leonel_MOREIRA, Johnny_ACOSTA, Giancarlo_GONZALEZ, Ian_SMITH, Oscar_DUARTE, Bryan_OVIEDO, Francisco_CALVO, Cristian_GAMBOA, Kendall_WASTON, Kenner_GUTIERREZ, Celso_BORGES, Christian_BOLANOS, Daniel_COLINDRES, Bryan_RUIZ, Rodney_WALLACE, Randall_AZOFEIFA, Yeltsin_TEJEDA, David_GUZMAN, Johan_VENEGAS, Joel_CAMPBELL, Marcos_URENA ;
+	wm:trainer RAMIREZ_Oscar .
+	
+wm:Keylor_NAVAS a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 31 .
+
+wm:Patrick_PEMBERTON a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position TORHÜTER ;
+	wm:alter 36 .
+
+wm:Leonel_MOREIRA a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 28 .
+
+wm:Johnny_ACOSTA a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Giancarlo_GONZALEZ a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Ian_SMITH a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 20 .
+
+wm:Oscar_DUARTE a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Bryan_OVIEDO a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Francisco_CALVO a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Cristian_GAMBOA a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Kendall_WASTON a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Kenner_GUTIERREZ a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Celso_BORGES a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Christian_BOLANOS a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 34 .
+
+wm:Daniel_COLINDRES a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Bryan_RUIZ a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Rodney_WALLACE a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Randall_AZOFEIFA a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Yeltsin_TEJEDA a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:David_GUZMAN a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Johan_VENEGAS a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:Joel_CAMPBELL a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:Marcos_URENA a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position STÜRMER ;
+	wm:alter 28 .
+	
+wm:RAMIREZ_Oscar a wm:trainer ;
+	wm:alter 53 .
+	
+
+	
+wm:Serbien	a wm:team ;
+	wm:spitzname Die_weißen_Adler;
+	wm:platzierungen_2014 0;
+	wm:spieler Vladimir_STOJKOVIC, Predrag_RAJKOVIC, Marko_DMITROVIC, Antonio_RUKAVINA, Dusko_TOSIC, Uros_SPAJIC, Branislav_IVANOVIC, Aleksandar_KOLAROV, Milos_VELJKOVIC, Milan_RODIC, Nikola_MILENKOVIC, Luka_MILIVOJEVIC, Andrija_ZIVKOVIC, Dusan_TADIC, Marko_GRUJIC, Filip_KOSTIC, Sergej_MILINKOVIC_SAVIC, Nemanja_MATIC, Adem_LJAJIC, Aleksandar_PRIJOVIC, Aleksandar_MITROVIC, Nemanja_RADONJIC, Luka_JOVIC ;
+	wm:trainer KRSTAJIC_Mladen.
+	
+wm:Vladimir_STOJKOVIC a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 34 .
+
+wm:Predrag_RAJKOVIC a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 22 .
+
+wm:Marko_DMITROVIC a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 26 .
+
+wm:Antonio_RUKAVINA a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Dusko_TOSIC a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 33 .
+
+wm:Uros_SPAJIC a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Branislav_IVANOVIC a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Aleksandar_KOLAROV a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Milos_VELJKOVIC a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Milan_RODIC a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Nikola_MILENKOVIC a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 20 .
+
+wm:Luka_MILIVOJEVIC a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Andrija_ZIVKOVIC a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 21 .
+
+wm:Dusan_TADIC a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Marko_GRUJIC a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Filip_KOSTIC a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Sergej_MILINKOVIC_SAVIC a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Nemanja_MATIC a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Adem_LJAJIC a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Aleksandar_PRIJOVIC a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position STÜRMER ;
+	wm:alter 28 .
+
+wm:Aleksandar_MITROVIC a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:Nemanja_RADONJIC a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 22 .
+
+wm:Luka_JOVIC a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 20 .
+
+wm:KRSTAJIC_Mladen a wm:trainer ;
+	wm:alter 44 .
+

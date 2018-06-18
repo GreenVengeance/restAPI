@@ -1,0 +1,4080 @@
+@prefix wm: <http://WM-Fußball.de/semweb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+____________________________________________________________________________________
+wm:gruppe a rdfs:Class .
+wm:team a rdfs:Class .
+wm:spieler a rdfs:Class ;
+	rdfs:subClassOf wm:team.
+wm:trainer a rdfs:Class ;
+	rdfs:subClassOf wm:team.
+____________________________________________________________________________________
+wm:spitzname a rdfs:Property ;
+	rdfs:domain wm:team;
+	rdfs:range xsd:string .
+wm:platzierungen_2014 a rdfs:Property ;
+	rdfs:domain wm:team;
+	rdfs:range xsd:double .
+wm:nummer a rdfs:Property ;
+	rdfs:domain wm:spieler;
+	rdfs:range xsd:double .
+wm:position a rdfs:Property ;
+	rdfs:domain wm:spieler;
+	rdfs:range xsd:string .
+wm:alter a rdfs:Property ;
+	rdfs:domain wm:spieler;
+	rdfs:range xsd:double .
+wm:alter a rdfs:Property ;
+	rdfs:domain wm:trainer;
+	rdfs:range xsd:double .
+
+____________________________________________________________________________________
+wm:A a wm:gruppe ; 
+	wm:team wm:Russland, wm:Saudi_Arabien, wm:Ägypten, wm:Uruguay .
+
+wm:Russland	a wm:team ;
+	wm:spitzname Sbornaja;
+	wm:platzierungen_2014 26 ;
+	wm:spieler Igor_AKINFEEV, Andrei_LUNEV, Vladimir_GABULOV, MARIO_FERNANDES, Ilya_KUTEPOV, Sergey_IGNASHEVICH, Andrey_SEMENOV, Fedor_KUDRIASHOV, Vladimir_GRANAT, Igor_SMOLNIKOV, Denis_CHERYSHEV, Daler_KUZIAEV, Iury_GAZINSKY, Alan_DZAGOEV, Roman_ZOBNIN, Alexey_MIRANCHUK, Anton_MIRANCHUK, Aleksandr_GOLOVIN, Yury_ZHIRKOV, Alexander_SAMEDOV, Aleksandr_EROKHIN, Fedor_SMOLOV, Artem_DZYUBA ;
+	wm:trainer CHERCHESOV_Stanislav .
+	
+wm:Igor_AKINFEEV a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 32 .
+
+wm:Andrei_LUNEV a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 26 .
+
+wm:Vladimir_GABULOV a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position TORHÜTER ;
+	wm:alter 34 .
+
+wm:MARIO_FERNANDES a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Ilya_KUTEPOV a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Sergey_IGNASHEVICH a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 38 .
+
+wm:Andrey_SEMENOV a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Fedor_KUDRIASHOV a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Vladimir_GRANAT a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Igor_SMOLNIKOV a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Denis_CHERYSHEV a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Daler_KUZIAEV a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Iury_GAZINSKY a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Alan_DZAGOEV a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Roman_ZOBNIN a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 24 .
+
+wm:Alexey_MIRANCHUK a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Anton_MIRANCHUK a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Aleksandr_GOLOVIN a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Yury_ZHIRKOV a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 34 .
+
+wm:Alexander_SAMEDOV a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Aleksandr_EROKHIN a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Fedor_SMOLOV a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 28 .
+
+wm:Artem_DZYUBA a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:CHERCHESOV_Stanislav a wm:trainer ;
+	wm:alter 54 .
+
+wm:Saudi Arabien	a wm:team ;
+	wm:spitzname Grünen_Falken;
+	wm:platzierungen_2014 0;
+	wm:spieler ABDULLAH_ALMUAIOUF, YASSER_ALMOSAILEM, MOHAMMED_ALOWAIS, MANSOUR_ALHARBI, OSAMA_HAWSAWI, ALI_ALBULAYHI, OMAR_HAWSAWI, MOHAMMED_ALBURAYK, YASSER_ALSHAHRANI, MOTAZ_HAWSAWI, SALMAN_ALFARAJ, YAHIA_ALSHEHRI, HATAN_BAHBIR, ABDULMALEK_ALKHAIBRI, MOHAMED_KANNO, ABDULLAH_OTAYF, ABDULLAH_ALKHAIBARI, HUSSAIN_ALMOQAHWI, TAISEER_ALJASSAM, SALEM_ALDAWSARI, MOHAMMED_ALSAHLAWI, FAHAD_ALMUWALLAD, MUHANNAD_ASIRI ;
+	wm:trainer PIZZI_Juan_Antonio.
+
+wm:ABDULLAH_ALMUAIOUF a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 31 .
+
+wm:YASSER_ALMOSAILEM a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position TORHÜTER ;
+	wm:alter 34 .
+
+wm:MOHAMMED_ALOWAIS a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position TORHÜTER ;
+	wm:alter 26 .
+
+wm:MANSOUR_ALHARBI a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:OSAMA_HAWSAWI a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:ALI_ALBULAYHI a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:OMAR_HAWSAWI a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:MOHAMMED_ALBURAYK a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:YASSER_ALSHAHRANI a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:MOTAZ_HAWSAWI a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:SALMAN_ALFARAJ a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:YAHIA_ALSHEHRI a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:HATAN_BAHBIR a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:ABDULMALEK_ALKHAIBRI a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:MOHAMED_KANNO a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:ABDULLAH_OTAYF a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:ABDULLAH_ALKHAIBARI a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 21 .
+
+wm:HUSSAIN_ALMOQAHWI a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:TAISEER_ALJASSAM a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:SALEM_ALDAWSARI a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:MOHAMMED_ALSAHLAWI a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:FAHAD_ALMUWALLAD a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:MUHANNAD_ASIRI a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+PIZZI_Juan_Antonio
+TRAINER
+Alter: 50
+	
+		
+wm:Ägypten	a wm:team ;
+	wm:spitzname Les Pharaons;
+	wm:platzierungen_2014 0;
+	wm:spieler ESSAM_ELHADARY,SHERIF_EKRAMY, MOHAMED_ELSHENAWY, ALI_GABR, AHMED_ELMOHAMADY, AHMED_HEGAZY, AHMED_FATHI, AYMAN_ASHRAF, MOHAMED_ABDELSHAFY, MAHMOUD_HAMDY, SAMIR_SAAD, OMAR_GABER, SAM_MORSY, TAREK_HAMED, MOHAMED_ELNENY, ABDALLA_SAID, TREZEGUET, MARWAN_MOHSEN, MOHAMED_SALAH, KAHRABA, RAMADAN_SOBHY, SHIKABALA, AMR_WARDA ;
+	wm:trainer CUPER Hector .
+
+wm:SHERIF_EKRAMY a wm:spieler;
+	wm:nummer 16;
+	wm:position TORHÜTER;
+	wm:Alter 34;
+
+wm:ESSAM_ELHADARY a wm:spieler;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 45 .
+
+wm:SHERIF_EKRAMY a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position TORHÜTER ;
+	wm:alter 34 .
+
+wm:MOHAMED_ELSHENAWY a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 29 .
+
+wm:ALI_GABR a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:AHMED_ELMOHAMADY a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:AHMED_HEGAZY a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:AHMED_FATHI a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position ABWEHR ;
+	wm:alter 33 .
+
+wm:AYMAN_ASHRAF a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:MOHAMED_ABDELSHAFY a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:MAHMOUD_HAMDY a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:SAMIR_SAAD a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:OMAR_GABER a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:SAM_MORSY a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:TAREK_HAMED a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:MOHAMED_ELNENY a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:ABDALLA_SAID a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:TREZEGUET a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:MARWAN_MOHSEN a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:MOHAMED_SALAH a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:KAHRABA a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:RAMADAN_SOBHY a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position STÜRMER ;
+	wm:alter 21 .
+
+wm:SHIKABALA a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 32 .
+
+wm:AMR_WARDA a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:CUPER_Hector a wm:trainer ;
+	wm:alter 62 .
+	
+	
+wm:Uruguay	a wm:team ;
+	wm:spitzname La_Celeste;
+	wm:platzierungen_2014 16 ;
+	wm:spieler Fernando_MUSLERA, Martin_CAMPANA, Martin_SILVA, Jose_GIMENEZ, Diego_GODIN, Guillermo_VARELA, Gaston_SILVA, Maximiliano_PEREIRA, Sebastian_COATES, Martin_CACERES, Carlos_SANCHEZ, Rodrigo_BENTANCUR, Cristian_RODRIGUEZ, Nahitan_NANDEZ, Lucas_TORREIRA, Matias_VECINO, Diego_LAXALT, Luis_SUAREZ, Giorgian_DE_ARRASCAETA, Cristhian_STUANI, Maximiliano_GOMEZ, Jonathan_URRETAVISCAYA, Edinson_CAVANI ;
+	wm:trainer TABAREZ_Oscar .
+
+wm:Fernando_MUSLERA a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 32 .
+
+wm:Martin_CAMPANA a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 29 .
+
+wm:Martin_SILVA a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 35 .
+
+wm:Jose_GIMENEZ a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:Diego_GODIN a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Guillermo_VARELA a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Gaston_SILVA a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Maximiliano_PEREIRA a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Sebastian_COATES a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Martin_CACERES a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Carlos_SANCHEZ a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Rodrigo_BENTANCUR a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 20 .
+
+wm:Cristian_RODRIGUEZ a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Nahitan_NANDEZ a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Lucas_TORREIRA a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Matias_VECINO a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Diego_LAXALT a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Luis_SUAREZ a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:Giorgian_DE_ARRASCAETA a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Cristhian_STUANI a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:Maximiliano_GOMEZ a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 21 .
+
+wm:Jonathan_URRETAVISCAYA a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 28 .
+
+wm:Edinson_CAVANI a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:TABAREZ_Oscar a wm:trainer ;
+	wm:alter 71 .
+_______________________________________________________________________
+wm:B a wm:gruppe ; 
+	wm:team wm:Portugal, wm:Spanien, wm:Marokko, wm:Iran .
+
+wm:Portugal	a wm:team ;
+	wm:spitzname Seleção_das_Quinas_Tugas;
+	wm:platzierungen_2014 19 ;
+	wm:spieler RUI_PATRICIO, ANTHONY_LOPES, BETO, BRUNO_ALVES, PEPE, RAPHAEL_GUERREIRO, JOSE_FONTE, RUBEN_DIAS, RICARDO, MARIO_RUI, CEDRIC, MANUEL_FERNANDES, JOAO_MOUTINHO, JOAO_MARIO, BERNARDO_SILVA, WILLIAM, BRUNO_FERNANDES, ADRIEN_SILVA, CRISTIANO_RONALDO, ANDRE_SILVA, GONCALO_GUEDES, GELSON_MARTINS, RICARDO_QUARESMA ;
+	wm:trainer SANTOS_Fernando .
+
+wm:RUI_PATRICIO a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 30 .
+
+wm:ANTHONY_LOPES a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 27 .
+
+wm:BETO a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position TORHÜTER ;
+	wm:alter 36 .
+
+wm:BRUNO_ALVES a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 36 .
+
+wm:PEPE a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 35 .
+
+wm:RAPHAEL_GUERREIRO a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:JOSE_FONTE a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:RUBEN_DIAS a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 21 .
+
+wm:RICARDO a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:MARIO_RUI a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:CEDRIC a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:MANUEL_FERNANDES a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:JOAO_MOUTINHO a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 31 .
+
+wm:JOAO_MARIO a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:BERNARDO_SILVA a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:WILLIAM a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:BRUNO_FERNANDES a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:ADRIEN_SILVA a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:CRISTIANO_RONALDO a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 33 .
+
+wm:ANDRE_SILVA a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 22 .
+
+wm:GONCALO_GUEDES a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position STÜRMER ;
+	wm:alter 21 .
+
+wm:GELSON_MARTINS a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:RICARDO_QUARESMA a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 34 .
+
+wm:SANTOS_Fernando a wm:trainer ;
+	wm:alter 63 .
+
+
+	
+wm:Spanien 	a wm:team ;
+	wm:spitzname La_Furia_Roja;
+	wm:platzierungen_2014 18 ;
+	wm:spieler David_DE_GEA, Kepa_ARRIZABALAGA, Pepe_REINA, Dani_CARVAJAL, Gerard_PIQUE, NACHO, Alvaro_ODRIOZOLA, Cesar_AZPILICUETA, Sergio_RAMOS, Nacho_MONREAL, Jordi_ALBA, Sergio_BUSQUETS, Andres_INIESTA, SAUL, KOKE, THIAGO, Marco_ASENSIO, ISCO, RODRIGO, Lucas_VAZQUEZ, Iago_ASPAS, Diego_COSTA, David_SILVA ;
+	wm:trainer HIERRO_Fernando.
+
+wm:David_DE_GEA a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 27 .
+
+wm:Kepa_ARRIZABALAGA a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position TORHÜTER ;
+	wm:alter 23 .
+
+wm:Pepe_REINA a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 35 .
+
+wm:Dani_CARVAJAL a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Gerard_PIQUE a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:NACHO a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Alvaro_ODRIOZOLA a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Cesar_AZPILICUETA a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Sergio_RAMOS a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Nacho_MONREAL a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Jordi_ALBA a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Sergio_BUSQUETS a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Andres_INIESTA a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 34 .
+
+wm:SAUL a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:KOKE a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:THIAGO a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Marco_ASENSIO a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:ISCO a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:RODRIGO a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Lucas_VAZQUEZ a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:Iago_ASPAS a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position STÜRMER ;
+	wm:alter 30 .
+
+wm:Diego_COSTA a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:David_SILVA a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position STÜRMER ;
+	wm:alter 32 .
+
+wm:HIERRO_Fernando a wm:trainer ;
+	wm:alter 50 .
+
+	
+	
+wm:Marokko	a wm:team ;
+	wm:spitzname Les_Lions_de_l’Atlas;
+	wm:platzierungen_2014 0;
+	wm:spieler Yassine_BOUNOU, Monir_EL_KAJOUI, Ahmed_TAGNAOUTI, Achraf_HAKIMI, Hamza_MENDYL, Manuel_DA_COSTA, Mehdi_BENATIA, Ghanem_SAISS, Nabil_DIRAR, Hakim_ZIYACH, Karim_EL_AHMADI, Younes_BELHANDA, Faycal_FAJR, Mbark_BOUSSOUFA, Youssef_AIT_BENNASSER, Noureddine_AMRABAT, Amine_HARIT, Sofyan_AMRABAT, Mehdi_CARCELA, Ayoub_EL_KAABI, Khalid_BOUTAIB, Youssef_EN_NESYRI, Aziz_BOUHADDOUZ;
+	wm:trainer RENARD_Herve.
+	
+wm:Yassine_BOUNOU a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 27 .
+
+wm:Monir_EL_KAJOUI a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 29 .
+
+wm:Ahmed_TAGNAOUTI a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position TORHÜTER ;
+	wm:alter 22 .
+
+wm:Achraf_HAKIMI a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 19 .
+
+wm:Hamza_MENDYL a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 20 .
+
+wm:Manuel_DA_COSTA a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Mehdi_BENATIA a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Ghanem_SAISS a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Nabil_DIRAR a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Hakim_ZIYACH a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Karim_EL_AHMADI a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Younes_BELHANDA a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Faycal_FAJR a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Mbark_BOUSSOUFA a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Youssef_AIT_BENNASSER a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 21 .
+
+wm:Noureddine_AMRABAT a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 31 .
+
+wm:Amine_HARIT a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 20 .
+
+wm:Sofyan_AMRABAT a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 21 .
+
+wm:Mehdi_CARCELA a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Ayoub_EL_KAABI a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Khalid_BOUTAIB a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:Youssef_EN_NESYRI a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 21 .
+
+wm:Aziz_BOUHADDOUZ a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:RENARD_Herve a wm:trainer ;
+	wm:alter 49 .
+
+	
+wm:Iran	a wm:team ;
+	wm:spitzname Team_Melli;
+	wm:platzierungen_2014 22 ;
+	wm:spieler Ali_BEIRANVAND, Rashid_MAZAHERI, Amir_ABEDZADEH, Ehsan_HAJISAFI, Roozbeh_CHESHMI, Milad_MOHAMMADI, Morteza_POURALIGANJI, Mohammad_Reza_KHANZADEH, Pejman_MONTAZERI, Majid_HOSSEINI, Ramin_REZAEIAN, Mehdi_TORABI, Saeid_EZATOLAHI, Masoud_SHOJAEI, Omid_EBRAHIMI, Vahid_AMIRI, Karim_ANSARIFARD, Saman_GHODDOS, Reza_GHOOCHANNEJHAD, Mehdi_TAREMI, Alireza_JAHANBAKHSH, Sardar_AZMOUN, Ashkan_DEJAGAH ;
+	wm:trainer QUEIROZ_Carlos.
+
+wm:Ali_BEIRANVAND a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 25 .
+
+wm:Rashid_MAZAHERI a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 29 .
+
+wm:Amir_ABEDZADEH a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position TORHÜTER ;
+	wm:alter 25 .
+
+wm:Ehsan_HAJISAFI a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Roozbeh_CHESHMI a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Milad_MOHAMMADI a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Morteza_POURALIGANJI a wm:spieler ;
+	wm:nummer 8e ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Mohammad_Reza_KHANZADEH a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Pejman_MONTAZERI a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Majid_HOSSEINI a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position ABWEHR ;
+	wm:alter 21 .
+
+wm:Ramin_REZAEIAN a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Mehdi_TORABI a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Saeid_EZATOLAHI a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 21 .
+
+wm:Masoud_SHOJAEI a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 34 .
+
+wm:Omid_EBRAHIMI a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Vahid_AMIRI a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Karim_ANSARIFARD a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 28 .
+
+wm:Saman_GHODDOS a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Reza_GHOOCHANNEJHAD a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position STÜRMER ;
+	wm:alter 30 .
+
+wm:Mehdi_TAREMI a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:Alireza_JAHANBAKHSH a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Sardar_AZMOUN a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:Ashkan_DEJAGAH a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:QUEIROZ_Carlos a wm:trainer ;
+	wm:alter 65 .
+
+____________________________________________________________________________________
+wm:C a wm:gruppe ; 
+	wm:team wm:Frankreich, wm:Australien, wm:Peru, wm:Dänemark .
+
+wm:Frankreich 	a wm:team ;
+	wm:spitzname Les_Bleus;
+	wm:platzierungen_2014 6 ;
+	wm:spieler Hugo_LLORIS, Steve_MANDANDA, Alphonse_AREOLA, Benjamin_PAVARD, Presnel_KIMPEMBE, Raphael_VARANE, Samuel_UMTITI, Adil_RAMI, Djibril_SIDIBE, Lucas_HERNANDEZ, Benjamin_MENDY, Paul_POGBA, Corentin_TOLISSO, Ngolo_KANTE, Blaise_MATUIDI, Steven_NZONZI, Antoine_GRIEZMANN, Thomas_LEMAR, Olivier_GIROUD, Kylian_MBAPPE, Ousmane_DEMBELE, Nabil_FEKIR, Florian_THAUVIN ;
+	wm:trainer DESCHAMPS_Didier.
+
+wm:Hugo_LLORIS a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 31 .
+
+wm:Steve_MANDANDA a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position TORHÜTER ;
+	wm:alter 33 .
+
+wm:Alphonse_AREOLA a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 25 .
+
+wm:Benjamin_PAVARD a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Presnel_KIMPEMBE a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Raphael_VARANE a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Samuel_UMTITI a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Adil_RAMI a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Djibril_SIDIBE a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Lucas_HERNANDEZ a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Benjamin_MENDY a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:Paul_POGBA a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Corentin_TOLISSO a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Ngolo_KANTE a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Blaise_MATUIDI a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 31 .
+
+wm:Steven_NZONZI a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Antoine_GRIEZMANN a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Thomas_LEMAR a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position STÜRMER ;
+	wm:alter 22 .
+
+wm:Olivier_GIROUD a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:Kylian_MBAPPE a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 19 .
+
+wm:Ousmane_DEMBELE a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 21 .
+
+wm:Nabil_FEKIR a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Florian_THAUVIN a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:DESCHAMPS_Didier a wm:trainer ;
+	wm:alter 49 .
+
+	
+wm:Australien 	a wm:team ;
+	wm:spitzname Die_Socceroos;
+	wm:platzierungen_2014 28 ;
+	wm:spieler Mathew_RYAN, Brad_JONES, Danny_VUKOVIC, Milos_DEGENEK, James_MEREDITH, Mark_MILLIGAN, Matthew_JURMAN, Aziz_BEHICH, Joshua_RISDON, Trent_SAINSBURY, Massimo_LUONGO, Aaron_MOOY, Mile_JEDINAK, Jackson_IRVINE, Tom_ROGIC, Tim_CAHILL, Mathew_LECKIE, Tomi_JURIC, Robbie_KRUSE, Andrew_NABBOUT, Jamie_MacLAREN, Daniel_ARZANI, Dimitrios_PETRATOS ;
+	wm:trainer VAN_MARWIJK_Bert .
+
+wm:Mathew_RYAN a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 26 .
+
+wm:Brad_JONES a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 36 .
+
+wm:Danny_VUKOVIC a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position TORHÜTER ;
+	wm:alter 33 .
+
+
+wm:Milos_DEGENEK a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:James_MEREDITH a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Mark_MILLIGAN a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Matthew_JURMAN a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Aziz_BEHICH a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Joshua_RISDON a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Trent_SAINSBURY a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Massimo_LUONGO a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Aaron_MOOY a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Mile_JEDINAK a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Jackson_IRVINE a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Tom_ROGIC a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Tim_CAHILL a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position STÜRMER ;
+	wm:alter 38 .
+
+wm:Mathew_LECKIE a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Tomi_JURIC a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:Robbie_KRUSE a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:Andrew_NABBOUT a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:Jamie_MacLAREN a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Daniel_ARZANI a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position STÜRMER ;
+	wm:alter 19 .
+
+wm:Dimitrios_PETRATOS a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:VAN_MARWIJK_Bert a wm:trainer ;
+	wm:alter 66 .
+	
+	
+wm:Peru	a wm:team ;
+	wm:spitzname La_Blanquirroja;
+	wm:platzierungen_2014 0;
+	wm:spieler Pedro_GALLESE, Carlos_CACEDA, Jose_CARVALLO, Alberto_RODRIGUEZ, Aldo_CORZO, Anderson_SANTAMARIA, Miguel_ARAUJO, Miguel_TRAUCO, Christian_RAMOS, Luis_ADVINCULA, Nilson_LOYOLA, Paolo_HURTADO, Christian_CUEVA, Renato_TAPIA, Andy_POLO, Wilder_CARTAGENA, Yoshimar_YOTUN, Pedro_AQUINO, Paolo_GUERRERO, Jefferson_FARFAN, Raul_RUIDIAZ, Andre_CARRILLO, Edison_FLORES ;
+	wm:trainer GARECA_Ricardo.
+
+wm:Pedro_GALLESE a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 28 .
+
+wm:Carlos_CACEDA a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 26 .
+
+wm:Jose_CARVALLO a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position TORHÜTER ;
+	wm:alter 32 .
+
+wm:Alberto_RODRIGUEZ a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Aldo_CORZO a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Anderson_SANTAMARIA a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Miguel_ARAUJO a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:Miguel_TRAUCO a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Christian_RAMOS a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Luis_ADVINCULA a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Nilson_LOYOLA a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:Paolo_HURTADO a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Christian_CUEVA a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Renato_TAPIA a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Andy_POLO a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Wilder_CARTAGENA a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Yoshimar_YOTUN a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Pedro_AQUINO a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Paolo_GUERRERO a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 34 .
+
+wm:Jefferson_FARFAN a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 33 .
+
+wm:Raul_RUIDIAZ a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Andre_CARRILLO a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Edison_FLORES a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:GARECA_Ricardo a wm:trainer ;
+	wm:alter 60 .
+	
+wm:Dänemark 	a wm:team ;
+	wm:spitzname Danish_Dynamite;
+	wm:platzierungen_2014 0;
+	wm:spieler Kasper_SCHMEICHEL, Jonas_LOSSL, Frederik_RONNOW, Jannik_VESTERGAARD, Simon_KJAER, Jonas_KNUDSEN, Andreas_CHRISTENSEN, Mathias_JORGENSEN, Henrik_DALSGAARD, Jens_STRYGER_LARSEN, Michael_KROHN, DEHLI, William_KVIST, Thomas_DELANEY, Christian_ERIKSEN, Lukas_LERAGER, Lasse_SCHONE, Nicolai_JORGENSEN, Martin_BRAITHWAITE, Kasper_DOLBERG, Viktor_FISCHER, Yussuf_Yurary_POULSEN, Andreas_CORNELIUS, Pione_SISTO ;
+	wm:trainer HAREIDE_Age .
+	
+
+wm:Kasper_SCHMEICHEL a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 31 .
+
+wm:Jonas_LOSSL a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position TORHÜTER ;
+	wm:alter 29 .
+
+wm:Frederik_RONNOW a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position TORHÜTER ;
+	wm:alter 25 .
+
+wm:Jannik_VESTERGAARD a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Simon_KJAER a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Jonas_KNUDSEN a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Andreas_CHRISTENSEN a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Mathias_JORGENSEN a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Henrik_DALSGAARD a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Jens_STRYGER_LARSEN a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Michael_KROHN_DEHLI a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 35 .
+
+wm:William_KVIST a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Thomas_DELANEY a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Christian_ERIKSEN a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Lukas_LERAGER a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 24 .
+
+wm:Lasse_SCHONE a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Nicolai_JORGENSEN a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Martin_BRAITHWAITE a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Kasper_DOLBERG a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position STÜRMER ;
+	wm:alter 20 .
+
+wm:Viktor_FISCHER a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Yussuf_Yurary_POULSEN a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Andreas_CORNELIUS a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:Pione_SISTO a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:HAREIDE_Age a wm:trainer ;
+	wm:alter 64 .
+
+
+____________________________________________________________________________________
+wm:D a wm:gruppe ;  
+	wm:team  wm:Argentinien, wm:Island, wm:Kroatien, wm:Nigeria .
+
+wm:Argentinien	a wm:team ; 
+	wm:spitzname La_Albiceleste;
+	wm:platzierungen_2014 2 ;
+	wm:spieler Nahuel_GUZMAN, Franco_ARMANI, Wilfredo_CABALLERO, Gabriel_MERCADO, Nicolas_TAGLIAFICO, Cristian_ANSALDI, Federico_FAZIO, Marcos_ACUNA, Javier_MASCHERANO, Marcos_ROJO, Nicolas_OTAMENDI, Eduardo_SALVIO, Lucas_BIGLIA, Ever_BANEGA, Angel_DI_MARIA, Maximiliano_MEZA, Enzo_PEREZ, Giovani_LO_CELSO, Cristian_PAVON, Gonzalo_HIGUAIN, Lionel_MESSI, Sergio_AGUERO, Paulo_DYBALA ;
+wm:trainer SAMPAOLI_Jorge .
+
+wm:Nahuel_GUZMAN a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 32 .
+
+wm:Franco_ARMANI a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 31 .
+
+wm:Wilfredo_CABALLERO a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 36 .
+
+wm:Gabriel_MERCADO a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Nicolas_TAGLIAFICO a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Cristian_ANSALDI a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Federico_FAZIO a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Marcos_ACUNA a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Javier_MASCHERANO a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Marcos_ROJO a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Nicolas_OTAMENDI a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Eduardo_SALVIO a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Lucas_BIGLIA a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Ever_BANEGA a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Angel_DI_MARIA a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Maximiliano_MEZA a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Enzo_PEREZ a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Giovani_LO_CELSO a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Cristian_PAVON a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Gonzalo_HIGUAIN a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 30 .
+
+wm:Lionel_MESSI a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 30 .
+
+wm:Sergio_AGUERO a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 30 .
+
+wm:Paulo_DYBALA a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:SAMPAOLI_Jorge a wm:trainer ;
+	alter 58 .
+
+
+wm:Island	a wm:team ;
+	wm:spitzname Strakarnir_okkar;
+	wm:platzierungen_2014 0;
+	wm:spieler Hannes_HALLDORSSON, Frederik_SCHRAM, Runar_RUNARSSON, Birkir_SAEVARSSON, Sverrir_INGASON, Ragnar_SIGURDSSON, Kari_ARNASON, Holmar_EYJOLFSSON, Hordur_MAGNUSSON, Ari_SKULASON, Samuel_FRIDJONSSON, Albert_GUDMUNDSSON, Johann_GUDMUNDSSON, Birkir_BJARNASON, Gylfi_SIGURDSSON, Olafur_SKULASON, Aron_GUNNARSSON, Rurik_GISLASON, Emil_HALLFREDSSON, Arnor_TRAUSTASON, Bjorn_SIGURDARSON, Alfred_FINNBOGASON, Jon_BODVARSSON ;
+	wm:trainer HALLGRIMSSON_Heimir .
+
+wm:Hannes_HALLDORSSON a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 34 .
+
+wm:Frederik_SCHRAM a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 23 .
+
+wm:Runar_RUNARSSON a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position TORHÜTER ;
+	wm:alter 23 .
+
+wm:Birkir_SAEVARSSON a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 33 .
+
+wm:Sverrir_INGASON a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Ragnar_SIGURDSSON a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Kari_ARNASON a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position ABWEHR ;
+	wm:alter 35 .
+
+wm:Holmar_EYJOLFSSON a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Hordur_MAGNUSSON a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Ari_SKULASON a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Samuel_FRIDJONSSON a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Albert_GUDMUNDSSON a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 21 .
+
+wm:Johann_GUDMUNDSSON a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Birkir_BJARNASON a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Gylfi_SIGURDSSON a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Olafur_SKULASON a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 35 .
+
+wm:Aron_GUNNARSSON a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Rurik_GISLASON a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Emil_HALLFREDSSON a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Arnor_TRAUSTASON a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Bjorn_SIGURDARSON a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Alfred_FINNBOGASON a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:Jon_BODVARSSON a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:HALLGRIMSSON_Heimir a wm:trainer ;
+	wm:alter 51 .
+	
+	
+wm:Kroatien	a wm:team ;
+	wm:spitzname Kockasti_und_Vatreni;
+	wm:platzierungen_2014 17;
+	wm:spieler Dominik_LIVAKOVIC, Lovre_KALINIC, Danijel_SUBASIC, Sime_VRSALJKO, Ivan_STRINIC, Vedran_CORLUKA, Dejan_LOVREN, Tin_JEDVAJ, Duje_CALET_CAR, Domagoj_VIDA, Josip_PIVARIC, Ivan_RAKITIC, Mateo_KOVACIC, Luka_MODRIC, Marcelo_BROZOVIC, Filip_BRADARIC, Milan_BADELJ, Ivan_PERISIC, Andrej_KRAMARIC, Nikola_KALINIC, Mario_MANDZUKIC, Ante_REBIC, Marko_PJACA ;
+	wm:trainer DALIC_Zlatko .
+
+wm:Dominik_LIVAKOVIC a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 23 .
+
+wm:Lovre_KALINIC a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 28 .
+
+wm:Danijel_SUBASIC a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 33 .
+
+wm:Sime_VRSALJKO a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Ivan_STRINIC a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Vedran_CORLUKA a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Dejan_LOVREN a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Tin_JEDVAJ a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Duje_CALET_CAR a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 21 .
+
+wm:Domagoj_VIDA a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Josip_PIVARIC a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Ivan_RAKITIC a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Mateo_KOVACIC a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 24 .
+
+wm:Luka_MODRIC a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Marcelo_BROZOVIC a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Filip_BRADARIC a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Milan_BADELJ a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Ivan_PERISIC a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:Andrej_KRAMARIC a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:Nikola_KALINIC a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position STÜRMER ;
+	wm:alter 30 .
+
+wm:Mario_MANDZUKIC a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position STÜRMER ;
+	wm:alter 32 .
+
+wm:Ante_REBIC a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Marko_PJACA a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:DALIC_Zlatko a wm:trainer ;
+	wm:alter 51 .	
+	
+	
+wm:Nigeria 	a wm:team ;
+	wm:spitzname ;
+	wm:platzierungen_2014 13 ;
+	wm:spieler Ikechukwu_EZENWA, Daniel_AKPEYI, Francis_UZOHO, Bryan_IDOWU, Elderson_ECHIEJILE, William_EKONG, Leon_BALOGUN, Abdullahi_SHEHU, Chidozie_AWAZIEM, Tyronne_EBUEHI, Kenneth_OMERUO, Wilfred_NDIDI, Oghenekaro_ETEBO, John_Obi_MIKEL, Joel_OBI, Ogenyi_ONAZI, John_OGU, Ahmed_MUSA, Odion_IGHALO, Victor_MOSES, Simeon_NWANKWO, Kelechi_IHEANACHO, Alex_IWOBI ;
+	wm:trainer ROHR_Gernot.
+
+
+wm:Ikechukwu_EZENWA a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 29 .
+
+wm:Daniel_AKPEYI a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position TORHÜTER ;
+	wm:alter 32 .
+
+wm:Francis_UZOHO a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 19 .
+
+wm:Bryan_IDOWU a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Elderson_ECHIEJILE a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:William_EKONG a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Leon_BALOGUN a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Abdullahi_SHEHU a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Chidozie_AWAZIEM a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position ABWEHR ;
+	wm:alter 21 .
+
+wm:Tyronne_EBUEHI a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Kenneth_OMERUO a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Wilfred_NDIDI a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 21 .
+
+wm:Oghenekaro_ETEBO a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:John_Obi_MIKEL a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 31 .
+
+wm:Joel_OBI a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Ogenyi_ONAZI a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:John_OGU a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Ahmed_MUSA a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:Odion_IGHALO a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:Victor_MOSES a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Simeon_NWANKWO a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:Kelechi_IHEANACHO a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position STÜRMER ;
+	wm:alter 22 .
+
+wm:Alex_IWOBI a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 22 .
+
+wm:ROHR_Gernot a wm:trainer ;
+	wm:alter 64 .
+
+____________________________________________________________________________________
+wm:E a wm:gruppe ; 
+	wm:team wm:Brasilien, wm:Schweiz, wm:Costa_Rica, wm:Serbien .
+
+wm:Brasilien	a wm:team ;
+	wm:spitzname Seleção;
+	wm:platzierungen_2014 4 ;
+	wm:spieler ALISSON, CASSIO, EDERSON, THIAGO_SILVA, MIRANDA, PEDRO_GEROMEL, FILIPE_LUIS, MARCELO, MARQUINHOS, DANILO, FAGNER, CASEMIRO, RENATO_AUGUSTO, PHILIPPE_COUTINHO, PAULINHO, FERNANDINHO, FRED, WILLIAN, DOUGLAS_COSTA, GABRIEL_JESUS, NEYMAR, ROBERTO_FIRMINO, TAISON ;
+	wm:trainer TITE;
+
+
+wm:ALISSON a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 25 .
+
+wm:CASSIO a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position TORHÜTER ;
+	wm:alter 31 .
+
+wm:EDERSON a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 24 .
+
+wm:THIAGO_SILVA a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 33 .
+
+wm:MIRANDA a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 33 .
+
+wm:PEDRO_GEROMEL a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:FILIPE_LUIS a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:MARCELO a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:MARQUINHOS a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:DANILO a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:FAGNER a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:CASEMIRO a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:RENATO_AUGUSTO a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:PHILIPPE_COUTINHO a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:PAULINHO a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:FERNANDINHO a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:FRED a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:WILLIAN a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:DOUGLAS_COSTA a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:GABRIEL_JESUS a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 21 .
+
+wm:NEYMAR a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:ROBERTO_FIRMINO a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:TAISON a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position STÜRMER ;
+	wm:alter 30 .
+
+wm:TITE a wm:trainer ;
+	wm:alter 57 .
+
+
+wm:Schweiz	a wm:team ;
+	wm:spitzname Nati;
+	wm:platzierungen_2014 14 ;
+	wm:spieler Yann_SOMMER, Yvon_MVOGO, Roman_BUERKI, Stephan_LICHTSTEINER, Francois_MOUBANDJE, Nico_ELVEDI, Manuel_AKANJI, Michael_LANG, Ricardo_RODRIGUEZ, Johan_DJOUROU, Fabian_SCHAER, Remo_FREULER, Granit_XHAKA, Valon_BEHRAMI, Steven_ZUBER, Blerim_DZEMAILI, Gelson_FERNANDES, Denis_ZAKARIA, Xherdan_SHAQIRI, Breel_EMBOLO, Haris_SEFEROVIC, Mario_GAVRANOVIC, Josip_DRMIC ;
+	wm:trainer PETKOVIC_Vladimir.
+	
+wm:Yann_SOMMER a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 29 .
+
+wm:Yvon_MVOGO a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 24 .
+
+wm:Roman_BUERKI a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position TORHÜTER ;
+	wm:alter 27 .
+
+wm:Stephan_LICHTSTEINER a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Francois_MOUBANDJE a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Nico_ELVEDI a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 21 .
+
+wm:Manuel_AKANJI a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Michael_LANG a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Ricardo_RODRIGUEZ a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Johan_DJOUROU a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Fabian_SCHAER a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Remo_FREULER a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Granit_XHAKA a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Valon_BEHRAMI a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Steven_ZUBER a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Blerim_DZEMAILI a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Gelson_FERNANDES a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 31 .
+
+wm:Denis_ZAKARIA a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 21 .
+
+wm:Xherdan_SHAQIRI a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Breel_EMBOLO a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 21 .
+
+wm:Haris_SEFEROVIC a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:Mario_GAVRANOVIC a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 28 .
+
+wm:Josip_DRMIC a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:PETKOVIC_Vladimir a wm:trainer ;
+	wm:alter 54 .
+
+	
+	
+wm:Costa_Rica	a wm:team ; 
+	wm:spitzname Ticos;
+	wm:platzierungen_2014 7 ;
+	wm:spieler Keylor_NAVAS, Patrick_PEMBERTON, Leonel_MOREIRA, Johnny_ACOSTA, Giancarlo_GONZALEZ, Ian_SMITH, Oscar_DUARTE, Bryan_OVIEDO, Francisco_CALVO, Cristian_GAMBOA, Kendall_WASTON, Kenner_GUTIERREZ, Celso_BORGES, Christian_BOLANOS, Daniel_COLINDRES, Bryan_RUIZ, Rodney_WALLACE, Randall_AZOFEIFA, Yeltsin_TEJEDA, David_GUZMAN, Johan_VENEGAS, Joel_CAMPBELL, Marcos_URENA ;
+	wm:trainer RAMIREZ_Oscar .
+	
+wm:Keylor_NAVAS a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 31 .
+
+wm:Patrick_PEMBERTON a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position TORHÜTER ;
+	wm:alter 36 .
+
+wm:Leonel_MOREIRA a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 28 .
+
+wm:Johnny_ACOSTA a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Giancarlo_GONZALEZ a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Ian_SMITH a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 20 .
+
+wm:Oscar_DUARTE a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Bryan_OVIEDO a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Francisco_CALVO a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Cristian_GAMBOA a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Kendall_WASTON a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Kenner_GUTIERREZ a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Celso_BORGES a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Christian_BOLANOS a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 34 .
+
+wm:Daniel_COLINDRES a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Bryan_RUIZ a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Rodney_WALLACE a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Randall_AZOFEIFA a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Yeltsin_TEJEDA a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:David_GUZMAN a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Johan_VENEGAS a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:Joel_CAMPBELL a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:Marcos_URENA a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position STÜRMER ;
+	wm:alter 28 .
+	
+wm:RAMIREZ_Oscar a wm:trainer ;
+	wm:alter 53 .
+	
+
+wm:Serbien	a wm:team ;
+	wm:spitzname Die_weißen_Adler;
+	wm:platzierungen_2014 0;
+	wm:spieler Vladimir_STOJKOVIC, Predrag_RAJKOVIC, Marko_DMITROVIC, Antonio_RUKAVINA, Dusko_TOSIC, Uros_SPAJIC, Branislav_IVANOVIC, Aleksandar_KOLAROV, Milos_VELJKOVIC, Milan_RODIC, Nikola_MILENKOVIC, Luka_MILIVOJEVIC, Andrija_ZIVKOVIC, Dusan_TADIC, Marko_GRUJIC, Filip_KOSTIC, Sergej_MILINKOVIC_SAVIC, Nemanja_MATIC, Adem_LJAJIC, Aleksandar_PRIJOVIC, Aleksandar_MITROVIC, Nemanja_RADONJIC, Luka_JOVIC ;
+	wm:trainer KRSTAJIC_Mladen.
+	
+wm:Vladimir_STOJKOVIC a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 34 .
+
+wm:Predrag_RAJKOVIC a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 22 .
+
+wm:Marko_DMITROVIC a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 26 .
+
+wm:Antonio_RUKAVINA a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Dusko_TOSIC a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 33 .
+
+wm:Uros_SPAJIC a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Branislav_IVANOVIC a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Aleksandar_KOLAROV a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Milos_VELJKOVIC a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Milan_RODIC a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Nikola_MILENKOVIC a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 20 .
+
+wm:Luka_MILIVOJEVIC a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Andrija_ZIVKOVIC a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 21 .
+
+wm:Dusan_TADIC a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Marko_GRUJIC a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Filip_KOSTIC a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Sergej_MILINKOVIC_SAVIC a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Nemanja_MATIC a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Adem_LJAJIC a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Aleksandar_PRIJOVIC a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position STÜRMER ;
+	wm:alter 28 .
+
+wm:Aleksandar_MITROVIC a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:Nemanja_RADONJIC a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 22 .
+
+wm:Luka_JOVIC a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 20 .
+
+wm:KRSTAJIC_Mladen a wm:trainer ;
+	wm:alter 44 .
+____________________________________________________________________________
+wm:F a wm:gruppe ; 
+	wm:team wm:Deutschland, wm:Mexiko, wm:Schweden, wm:Südkorea .
+
+wm:Deutschland 	a wm:team ;
+	wm:spitzname Die_Mannschaft;
+	wm:platzierungen_2014 1 ;
+	wm:spieler Manuel_NEUER, Kevin_TRAPP, Mar_Andre_TER_STEGEN, Marvin_PLATTENHARDT, Jonas_HECTOR, Matthias_GINTER, Mats_HUMMELS, Niklas_SUELE, Antonio_RUEDIGER, Jerome_BOATENG, Joshua_KIMMICH, Sami_KHEDIRA, Julian_DRAXLER, Toni_KROOS, Mesut_OEZIL, Thomas_MUELLER, Leon_GORETZKA, Sebastian_RUDY, Julian_BRANDT, Ilkay_GUENDOGAN, Timo_WERNER, Marco_REUS, Mario_GOMEZ ;
+	wm:trainer  OEW_Joachim .
+
+wm:Manuel_NEUER a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 32 .
+
+wm:Kevin_TRAPP a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 27 .
+
+wm:Mar_Andre_TER_STEGEN a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position TORHÜTER ;
+	wm:alter 26 .
+
+wm:Marvin_PLATTENHARDT a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Jonas_HECTOR a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Matthias_GINTER a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Mats_HUMMELS a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Niklas_SUELE a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Antonio_RUEDIGER a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Jerome_BOATENG a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Joshua_KIMMICH a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:Sami_KHEDIRA a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 31 .
+
+wm:Julian_DRAXLER a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 24 .
+
+wm:Toni_KROOS a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Mesut_OEZIL a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Thomas_MUELLER a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Leon_GORETZKA a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Sebastian_RUDY a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Julian_BRANDT a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Ilkay_GUENDOGAN a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Timo_WERNER a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 22 .
+
+wm:Marco_REUS a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:Mario_GOMEZ a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position STÜRMER ;
+	wm:alter 32 .
+
+wm:LOEW_Joachim a wm:trainer ;
+	wm:alter 58 .
+
+	
+wm:Mexiko	a wm:team ;
+	wm:spitzname El_Tri;
+	wm:platzierungen_2014 10 ;
+	wm:spieler Jose_CORONA, Alfredo_TALAVERA, Guillermo_OCHOA, Hugo_AYALA, Carlos_SALCEDO, Rafael_MARQUEZ, Hector_MORENO, Hector_HERRERA, Edson_ALVAREZ, Erick_GUTIERREZ, Jonathan_DOS_SANTOS, Miguel_LAYUN, Giovani_DOS_SANTOS, Jesus_CORONA, Andres_GUARDADO, Javier_AQUINO, Jesus_GALLARDO, Marco_FABIAN, Raul_JIMENEZ, Carlos_VELA, Javier_HERNANDEZ, Oribe_PERALTA, Hirving_LOZANO ;
+	wm:trainer OSORIO_Juan_Carlos .
+
+wm:Jose_CORONA a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 37 .
+
+wm:Alfredo_TALAVERA a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 35 .
+
+wm:Guillermo_OCHOA a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position TORHÜTER ;
+	wm:alter 32 .
+
+wm:Hugo_AYALA a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Carlos_SALCEDO a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Rafael_MARQUEZ a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 39 .
+
+wm:Hector_MORENO a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Hector_HERRERA a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Edson_ALVAREZ a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position ABWEHR ;
+	wm:alter 20 .
+
+wm:Erick_GUTIERREZ a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Jonathan_DOS_SANTOS a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Miguel_LAYUN a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Giovani_DOS_SANTOS a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Jesus_CORONA a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Andres_GUARDADO a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 31 .
+
+wm:Javier_AQUINO a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Jesus_GALLARDO a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Marco_FABIAN a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position STÜRMER ;
+	wm:alter 28 .
+
+wm:Raul_JIMENEZ a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Carlos_VELA a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:Javier_HERNANDEZ a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position STÜRMER ;
+	wm:alter 30 .
+
+wm:Oribe_PERALTA a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 34 .
+
+wm:Hirving_LOZANO a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position STÜRMER ;
+	wm:alter 22 .
+
+wm:OSORIO_Juan_Carlos a wm:trainer ;
+	wm:alter 57 .
+
+
+wm:Schweden	a wm:team ;
+	wm:spitzname Blågult;
+	wm:platzierungen_2014 0;
+	wm:spieler Robin_OLSEN, Karl_Johan_JOHNSSON, Kristoffer_NORDFELDT, Mikael_LUSTIG, Victor_LINDELOF, Andreas_GRANQVIST, Martin_OLSSON, Ludwig_AUGUSTINSSON, Filip_HELANDER, Emil_KRAFTH, Pontus_JANSSON, Sebastian_LARSSON, Albin_EKDAL, Emil_FORSBERG, Gustav_SVENSSON, Oscar_HILJEMARK, Viktor_CLAESSON, Marcus_ROHDEN, Jimmy_DURMAZ, Marcus_BERG, John_GUIDETTI, Ola_TOIVONEN, Isaac_Kiese_THELIN ;
+	wm:trainer ANDERSSON_Janne .
+	
+wm:Robin_OLSEN a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 28 .
+
+wm:Karl_Johan_JOHNSSON a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 28 .
+
+wm:Kristoffer_NORDFELDT a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 28 .
+
+wm:Mikael_LUSTIG a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Victor_LINDELOF a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:Andreas_GRANQVIST a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 33 .
+
+wm:Martin_OLSSON a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Ludwig_AUGUSTINSSON a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Filip_HELANDER a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Emil_KRAFTH a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:Pontus_JANSSON a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Sebastian_LARSSON a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Albin_EKDAL a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Emil_FORSBERG a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Gustav_SVENSSON a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 31 .
+
+wm:Oscar_HILJEMARK a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Viktor_CLAESSON a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Marcus_ROHDEN a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Jimmy_DURMAZ a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Marcus_BERG a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:John_GUIDETTI a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:Ola_TOIVONEN a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:Isaac_Kiese_THELIN a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:ANDERSSON_Janne a wm:trainer ;
+	wm:alter 55 .
+
+wm:Südkorea	a wm:team ;
+	wm:spitzname Tigers_of_Asia_und_Red_Devils;
+	wm:platzierungen_2014 29 ;
+	wm:spieler KIM_Seunggyu, KIM_Jinhyeon, JO_Hyeonwoo, LEE_Yong, JUNG_Seunghyun, OH_Bansuk, YUN_Youngsun, PARK_Jooho, KIM_Minwoo, HONG_Chul, KIM_Younggwon, JANG_Hyunsoo, GO_Yohan, JU_Sejong, LEE_Seungwoo, KOO_Jacheol, JUNG_Wooyoung, KI_Sungyueng, LEE_Jaesung, MOON_Seonmin, SON_Heungmin, KIM_Shinwook, HWANG_Heechan ;
+	wm:trainer SHIN_Taeyong .
+
+wm:KIM_Seunggyu a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 27 .
+
+wm:KIM_Jinhyeon a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position TORHÜTER ;
+	wm:alter 30 .
+
+wm:JO_Hyeonwoo a wm:spieler ;
+	wm:nummer  ;
+	wm:position TORHÜTER ;
+	wm:alter 26 .
+
+wm:LEE_Yong a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:JUNG_Seunghyun a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:OH_Bansuk a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:YUN_Youngsun a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:PARK_Jooho a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:KIM_Minwoo a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:HONG_Chul a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:KIM_Younggwon a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:JANG_Hyunsoo a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:GO_Yohan a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:JU_Sejong a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:LEE_Seungwoo a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 20 .
+
+wm:KOO_Jacheol a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:JUNG_Wooyoung a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:KI_Sungyueng a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:LEE_Jaesung a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:MOON_Seonmin a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:SON_Heungmin a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:KIM_Shinwook a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 30 .
+
+wm:HWANG_Heechan a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 22 .
+
+wm:SHIN_Taeyong a wm:trainer ;
+	wm:alter 47 .
+
+____________________________________________________________________________________
+wm:G a wm:gruppe ; 
+	wm:team wm:Belgien, wm:Panama, wm:Tunesien, wm:England .
+
+wm:Belgien	a wm:team ;
+	wm:spitzname Diables_Rouge;
+	wm:platzierungen_2014 8 ;
+	wm:spieler Thibaut_COURTOIS, Simon_MIGNOLET, Koen_CASTEELS, Toby_ALDERWEIRELD, Thomas_VERMAELEN, Vincent_KOMPANY, Jan_VERTONGHEN, Thomas_MEUNIER, Dedryck_BOYATA, Leander_DENDONCKER, Axel_WITSEL, Kevin_DE_BRUYNE, Marouane_FELLAINI, Yannick_CARRASCO, Thorgan_HAZARD, Youri_TIELEMANS, Moussa_DEMBELE, Nacer_CHADLI, Romelu_LUKAKU, Eden_HAZARD, Dries_MERTENS, Adnan_JANUZAJ, Michy_BATSHUAYI ;
+	wm:trainer MARTINEZ_Roberto .
+
+wm:Thibaut_COURTOIS a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 26 .
+
+wm:Simon_MIGNOLET a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 30 .
+
+wm:Koen_CASTEELS a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position TORHÜTER ;
+	wm:alter 25 .
+
+wm:Toby_ALDERWEIRELD a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Thomas_VERMAELEN a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Vincent_KOMPANY a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Jan_VERTONGHEN a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Thomas_MEUNIER a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Dedryck_BOYATA a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Leander_DENDONCKER a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:Axel_WITSEL a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Kevin_DE_BRUYNE a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Marouane_FELLAINI a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Yannick_CARRASCO a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 24 .
+
+wm:Thorgan_HAZARD a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Youri_TIELEMANS a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 21 .
+
+wm:Moussa_DEMBELE a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Nacer_CHADLI a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Romelu_LUKAKU a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:Eden_HAZARD a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Dries_MERTENS a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:Adnan_JANUZAJ a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:Michy_BATSHUAYI a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:MARTINEZ_Roberto a wm:trainer ;
+	wm:alter 44 .
+
+	
+wm:Panama	a wm:team ;
+	wm:spitzname Los_Canaleros;
+	wm:platzierungen_2014 0;
+	wm:spieler Jaime_PENEDO, Jose_CALDERON, Alex_RODRIGUEZ, Michael_MURILLO, Harold_CUMMINGS, Fidel_ESCOBAR, Roman_TORRES, Adolfo_MACHADO, Eric_DAVIS, Luis_OVALLE, Felipe_BALOY, Gabriel_GOMEZ, Edgar_BARCENAS, Armando_COOPER, Valentin_PIMENTEL, Ricardo_AVILA, Anibal_GODOY, Jose_Luis_RODRIGUEZ, Blas_PEREZ, Gabriel_TORRES, Ismael_DIAZ, Abdiel_ARROYO, Luis_TEJADA ;
+	wm:trainer GOMEZ_Hernan .
+
+wm:Jaime_PENEDO a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 36 .
+
+wm:Jose_CALDERON a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 32 .
+
+wm:Alex_RODRIGUEZ a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position TORHÜTER ;
+	wm:alter 27 .
+
+wm:Michael_MURILLO a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Harold_CUMMINGS a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Fidel_ESCOBAR a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:Roman_TORRES a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Adolfo_MACHADO a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 33 .
+
+wm:Eric_DAVIS a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Luis_OVALLE a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Felipe_BALOY a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position ABWEHR ;
+	wm:alter 37 .
+
+wm:Gabriel_GOMEZ a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 34 .
+
+wm:Edgar_BARCENAS a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 24 .
+
+wm:Armando_COOPER a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Valentin_PIMENTEL a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Ricardo_AVILA a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 21 .
+
+wm:Anibal_GODOY a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Jose_Luis_RODRIGUEZ a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 19 .
+
+wm:Blas_PEREZ a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 37 .
+
+wm:Gabriel_TORRES a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:Ismael_DIAZ a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 21 .
+
+wm:Abdiel_ARROYO a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Luis_TEJADA a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 36 .
+
+
+wm:GOMEZ_Hernan a wm:trainer ;
+	wm:alter 62 .
+
+	
+	
+wm:Tunesien	a wm:team ;
+	wm:spitzname Les_Aigles_de_Carthage;
+	wm:platzierungen_2014 0;
+	wm:spieler Farouk_BEN_MUSTAPHA, Aymen_MATHLOUTHI, Mouez_HASSEN, Syam_BEN_YOUSSEF, Yohan_BEN_ALOUANE, Yassine_MERIAH, Oussama_HADDADI, Rami_BEDOUI, Dylan_BRONN, Ali_MAALOUL, Hamdi_NAGUEZ, Anice_BADRI, Ferjani_SASSI, Mohamed_BEN_AMOR, Ellyes_SKHIRI, Saifeddine_KHAOUI, Fakhreddine_BEN_YOUSSEF, Wahbi_KHAZRI, Ahmed_KHALIL, Bassem_SRARFI, Saber_KHALIFA, Ghaylen_CHAALELI, Naim_SLITI ;
+	wm:trainer MAALOUL_Nabil .
+	
+wm:Farouk_BEN_MUSTAPHA a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 28 .
+
+wm:Aymen_MATHLOUTHI a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position TORHÜTER ;
+	wm:alter 33 .
+
+wm:Mouez_HASSEN a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position TORHÜTER ;
+	wm:alter 23 .
+
+wm:Syam_BEN_YOUSSEF a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Yohan_BEN_ALOUANE a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Yassine_MERIAH a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Oussama_HADDADI a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Rami_BEDOUI a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Dylan_BRONN a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Ali_MAALOUL a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Hamdi_NAGUEZ a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Anice_BADRI a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Ferjani_SASSI a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Mohamed_BEN_AMOR a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Ellyes_SKHIRI a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Saifeddine_KHAOUI a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:Fakhreddine_BEN_YOUSSEF a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:Wahbi_KHAZRI a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Ahmed_KHALIL a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:Bassem_SRARFI a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 20 .
+
+wm:Saber_KHALIFA a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:Ghaylen_CHAALELI a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Naim_SLITI a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:MAALOUL_Nabil a wm:trainer ;
+	wm:alter 55 .
+	
+wm:England 	a wm:team ;
+	wm:spitzname Three_Lions;
+	wm:platzierungen_2014 24 ;
+	wm:spieler Jordan_PICKFORD, Jack_BUTLAND, Nick_POPE, Kyle_WALKER, Danny_ROSE, John_STONES, Harry_MAGUIRE, Kieran_TRIPPIER, Gary_CAHILL, Phil_JONES, Fabian_DELPH, Ashley_YOUNG, Trent_ALEXANDER_ARNOLD, Eric_DIER, Jesse_LINGARD, Jordan_HENDERSON, Dele_ALLI, Ruben_LOFTUS_CHEEK, Harry_KANE, Raheem_STERLING, Jamie_VARDY, Danny_WELBECK, Marcus_RASHFORD ;
+	wm:trainer SOUTHGATE_Gareth .
+	
+wm:Jordan_PICKFORD a wm:spieler ;
+	wm:nummer  ;
+	wm:position TORHÜTER ;
+	wm:alter 24 .
+
+wm:Jack_BUTLAND a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position TORHÜTER ;
+	wm:alter 25 .
+
+wm:Nick_POPE a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 26 .
+
+wm:Kyle_WALKER a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Danny_ROSE a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:John_STONES a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 24 .
+
+wm:Harry_MAGUIRE a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Kieran_TRIPPIER a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Gary_CAHILL a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Phil_JONES a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Fabian_DELPH a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Ashley_YOUNG a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Trent_ALEXANDER_ARNOLD a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 19 .
+
+wm:Eric_DIER a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 24 .
+
+wm:Jesse_LINGARD a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Jordan_HENDERSON a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Dele_ALLI a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Ruben_LOFTUS_CHEEK a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 22 .
+
+wm:Harry_KANE a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Raheem_STERLING a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:Jamie_VARDY a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:Danny_WELBECK a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Marcus_RASHFORD a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 20 .
+
+wm:SOUTHGATE_Gareth a wm:trainer ;
+	wm:alter 47 .
+
+____________________________________________________________________________________
+
+wm:H a wm:gruppe ; 
+	wm:team wm:Polen, wm:Senegal, wm:Kolumbien, wm:Japan. 
+
+wm:Polen	a wm:team ;
+	wm:spitzname Di_Weiß_Roten;
+	wm:platzierungen_2014 5 ;
+	wm:spieler Wojciech_SZCZESNY, Bartosz_BIALKOWSKI, Lukasz_FABIANSKI, Michal_PAZDAN, Artur_JEDRZEJCZYK, Thiago_CIONEK, Jan_BEDNAREK, Kamil_GLIK, Bartosz_BERESZYNSKI, Lukasz_PISZCZEK, Jacek_GORALSKI, Karol_LINETTY, Grzegorz_KRYCHOWIAK, Kamil_GROSICKI, Maciej_RYBUS, Jakub_BLASZCZYKOWSKI, Slawomir_PESZKO, Piotr_ZIELINSKI, Rafal_KURZAWA, Arkadiusz_MILIK, Robert_LEWANDOWSKI, Lukasz_TEODORCZYK, Dawid_KOWNACKI ;
+	wm:trainer NAWALKA_Adam.
+
+
+wm:Wojciech_SZCZESNY a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 28 .
+
+wm:Bartosz_BIALKOWSKI a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 30 .
+
+wm:Lukasz_FABIANSKI a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position TORHÜTER ;
+	wm:alter 33 .
+
+wm:Michal_PAZDAN a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Artur_JEDRZEJCZYK a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Thiago_CIONEK a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 32 .
+
+wm:Jan_BEDNAREK a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Kamil_GLIK a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Bartosz_BERESZYNSKI a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Lukasz_PISZCZEK a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position ABWEHR ;
+	wm:alter 33 .
+
+wm:Jacek_GORALSKI a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Karol_LINETTY a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Grzegorz_KRYCHOWIAK a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Kamil_GROSICKI a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Maciej_RYBUS a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Jakub_BLASZCZYKOWSKI a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Slawomir_PESZKO a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:Piotr_ZIELINSKI a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 24 .
+
+wm:Rafal_KURZAWA a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Arkadiusz_MILIK a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 24 .
+
+wm:Robert_LEWANDOWSKI a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 29 .
+
+wm:Lukasz_TEODORCZYK a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Dawid_KOWNACKI a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position STÜRMER ;
+	wm:alter 21 .
+	
+wm:NAWALKA_Adam a wm:trainer ;
+	wm:alter 60 .
+
+
+wm:Senegal	a wm:team ;
+	wm:spitzname Les_Lions_de_la_Teranga;
+	wm:platzierungen_2014 0;
+	wm:spieler Abdoulaye_DIALLO, Khadim_NDIAYE, Alfred_GOMIS, Saliou_CISS, Kalidou_KOULIBALY, Kara_MBODJI, Youssouf_SABALY, Lamine_GASSAMA, Moussa_WAGUE, Idrissa_Gana_GUEYE, Salif_SANE, Cheikhou_KOUYATE, Cheikh_NDOYE, Alfred_NDIAYE, Pape_Alioune_NDIAYE, Moussa_SOW, Mame_DIOUF, Sadio_MANE, Moussa_KONATE, Diafra_SAKHO, Ismaila_SARR, Mbaye_NIANG, Keita_BALDE ;
+	wm:trainer CISSE_Aliou .
+	
+
+
+wm:Abdoulaye_DIALLO a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 26 .
+
+wm:Khadim_NDIAYE a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position TORHÜTER ;
+	wm:alter 33 .
+
+wm:Alfred_GOMIS a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 24 .
+
+wm:Saliou_CISS a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Kalidou_KOULIBALY a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Kara_MBODJI a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Youssouf_SABALY a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Lamine_GASSAMA a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Moussa_WAGUE a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 19 .
+
+wm:Idrissa_Gana_GUEYE a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Salif_SANE a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Cheikhou_KOUYATE a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Cheikh_NDOYE a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Alfred_NDIAYE a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 28 .
+
+wm:Pape_Alioune_NDIAYE a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Moussa_SOW a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 32 .
+
+wm:Mame_DIOUF a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 30 .
+
+wm:Sadio_MANE a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position STÜRMER ;
+	wm:alter 26 .
+
+wm:Moussa_KONATE a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:Diafra_SAKHO a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position STÜRMER ;
+	wm:alter 28 .
+
+wm:Ismaila_SARR a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position STÜRMER ;
+	wm:alter 20 .
+
+wm:Mbaye_NIANG a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:Keita_BALDE a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position STÜRMER ;
+	wm:alter 23 .
+
+wm:CISSE_Aliou a wm:trainer ;
+	wm:alter 42 .
+
+	
+wm:Kolumbien	a wm:team ;
+	wm:spitzname Los_Cafeteros;
+	wm:platzierungen_2014 0;
+	wm:spieler David_OSPINA, Camilo_VARGAS, Jose_CUADRADO, Cristian_ZAPATA, Oscar_MURILLO, Santiago_ARIAS, Yerry_MINA, Johan_MOJICA, Farid_DIAZ, Davinson_SANCHEZ, Wilmar_BARRIOS, Carlos_SANCHEZ, Abel_AGUILAR, James_RODRIGUEZ, Juan_CUADRADO, Mateus_URIBE, Jefferson_LERMA, Juan_QUINTERO, Carlos_BACCA, Radamel_FALCAO, Luis_MURIEL, Miguel_BORJA, Jose_IZQUIERDO ;
+	wm:trainer PEKERMAN_Jose .
+	
+wm:David_OSPINA a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 29 .
+
+wm:Camilo_VARGAS a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 29 .
+
+wm:Jose_CUADRADO a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position TORHÜTER ;
+	wm:alter 33 .
+
+wm:Cristian_ZAPATA a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Oscar_MURILLO a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 30 .
+
+wm:Santiago_ARIAS a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position ABWEHR ;
+	wm:alter 26 .
+
+wm:Yerry_MINA a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:Johan_MOJICA a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Farid_DIAZ a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position ABWEHR ;
+	wm:alter 34 .
+
+wm:Davinson_SANCHEZ a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position ABWEHR ;
+	wm:alter 22 .
+
+wm:Wilmar_BARRIOS a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 24 .
+
+wm:Carlos_SANCHEZ a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Abel_AGUILAR a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 33 .
+
+wm:James_RODRIGUEZ a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Juan_CUADRADO a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Mateus_URIBE a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Jefferson_LERMA a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 23 .
+
+wm:Juan_QUINTERO a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Carlos_BACCA a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position STÜRMER ;
+	wm:alter 31 .
+
+wm:Radamel_FALCAO a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 32 .
+
+wm:Luis_MURIEL a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position STÜRMER ;
+	wm:alter 27 .
+
+wm:Miguel_BORJA a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:Jose_IZQUIERDO a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:PEKERMAN_Jose a wm:trainer ;
+	wm:alter 68 .
+	
+wm:Japan	a wm:team ;
+	wm:spitzname Samurai_Blue;
+	wm:platzierungen_2014 30 ;
+	wm:spieler Eiji_KAWASHIMA, Masaaki_HIGASHIGUCHI, Kosuke_NAKAMURA, Naomichi_UEDA, Gen_SHOJI, Yuto_NAGATOMO, Wataru_ENDO, Hiroki_SAKAI, Tomoaki_MAKINO, Gotoku_SAKAI, Maya_YOSHIDA, Keisuke_HONDA, Gaku_SHIBASAKI, Genki_HARAGUCHI, Shinji_KAGAWA, Takashi_USAMI, Takashi_INUI, Hotaru_YAMAGUCHI, Makoto_HASEBE, Ryota_OHSHIMA, Shinji_OKAZAKI, Yoshinori_MUTO, Yuya_OSAKO ;
+	wm:trainer NISHINO_Akira .
+
+wm:Eiji_KAWASHIMA a wm:spieler ;
+	wm:nummer 1 ;
+	wm:position TORHÜTER ;
+	wm:alter 35 .
+
+wm:Masaaki_HIGASHIGUCHI a wm:spieler ;
+	wm:nummer 12 ;
+	wm:position TORHÜTER ;
+	wm:alter 32 .
+
+wm:Kosuke_NAKAMURA a wm:spieler ;
+	wm:nummer 23 ;
+	wm:position TORHÜTER ;
+	wm:alter 23 .
+
+wm:Naomichi_UEDA a wm:spieler ;
+	wm:nummer 2 ;
+	wm:position ABWEHR ;
+	wm:alter 23 .
+
+wm:Gen_SHOJI a wm:spieler ;
+	wm:nummer 3 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Yuto_NAGATOMO a wm:spieler ;
+	wm:nummer 5 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Wataru_ENDO a wm:spieler ;
+	wm:nummer 6 ;
+	wm:position ABWEHR ;
+	wm:alter 25 .
+
+wm:Hiroki_SAKAI a wm:spieler ;
+	wm:nummer 19 ;
+	wm:position ABWEHR ;
+	wm:alter 28 .
+
+wm:Tomoaki_MAKINO a wm:spieler ;
+	wm:nummer 20 ;
+	wm:position ABWEHR ;
+	wm:alter 31 .
+
+wm:Gotoku_SAKAI a wm:spieler ;
+	wm:nummer 21 ;
+	wm:position ABWEHR ;
+	wm:alter 27 .
+
+wm:Maya_YOSHIDA a wm:spieler ;
+	wm:nummer 22 ;
+	wm:position ABWEHR ;
+	wm:alter 29 .
+
+wm:Keisuke_HONDA a wm:spieler ;
+	wm:nummer 4 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 32 .
+
+wm:Gaku_SHIBASAKI a wm:spieler ;
+	wm:nummer 7 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Genki_HARAGUCHI a wm:spieler ;
+	wm:nummer 8 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Shinji_KAGAWA a wm:spieler ;
+	wm:nummer 10 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 29 .
+
+wm:Takashi_USAMI a wm:spieler ;
+	wm:nummer 11 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 26 .
+
+wm:Takashi_INUI a wm:spieler ;
+	wm:nummer 14 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 30 .
+
+wm:Hotaru_YAMAGUCHI a wm:spieler ;
+	wm:nummer 16 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 27 .
+
+wm:Makoto_HASEBE a wm:spieler ;
+	wm:nummer 17 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 34 .
+
+wm:Ryota_OHSHIMA a wm:spieler ;
+	wm:nummer 18 ;
+	wm:position MITTELFELDSPIELER ;
+	wm:alter 25 .
+
+wm:Shinji_OKAZAKI a wm:spieler ;
+	wm:nummer 9 ;
+	wm:position STÜRMER ;
+	wm:alter 32 .
+
+wm:Yoshinori_MUTO a wm:spieler ;
+	wm:nummer 13 ;
+	wm:position STÜRMER ;
+	wm:alter 25 .
+
+wm:Yuya_OSAKO a wm:spieler ;
+	wm:nummer 15 ;
+	wm:position STÜRMER ;
+	wm:alter 28 .
+
+
+wm:NISHINO_Akira a wm:trainer ;
+	wm:alter 63 .
+
+____________________________________________________________________________________
+
+	
+	
+
+	
+
+	
+
+
+
+
